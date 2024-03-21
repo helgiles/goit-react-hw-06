@@ -25,7 +25,7 @@ const initialValues = {
 export default function ContactForm() {
   const nameFieldId = nanoid();
   const numberFieldId = nanoid();
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
     dispatch(

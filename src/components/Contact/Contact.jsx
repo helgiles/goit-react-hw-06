@@ -5,7 +5,7 @@ import { deleteContact } from '../../redux/contactsSlice';
 import css from './Contact.module.css';
 
 export default function Contact({ data: { id, name, number } }) {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
   return (
     <div className={css.contact}>
       <div className={css.container}>
